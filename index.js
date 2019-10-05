@@ -1,10 +1,5 @@
 hexo.extend.filter.register('before_post_render', function (data) {
-    console.info(
-        "\n---------------------------"
-        "\ntitle: " + data.title +
-        "\nsource: " + data.source +
-        "\n"
-    );
+    console.info("\n--------------------------- " + data.title + " ---------------------------\nsource: " + data.source);
     var regExp = RegExp("!\\[(.*)\\]\\((.*)\\)", "g");
     data.content = data.content.replace(regExp, function (substring, name, url) {
         if (url.indexOf("://") === -1) {
@@ -22,6 +17,5 @@ hexo.extend.filter.register('before_post_render', function (data) {
         console.info("replace " + substring + " -> " + "<!-- toc -->");
         return "<!-- toc -->";
     });
-    console.info("\n---------------------------");
     return data;
 }, 9);
