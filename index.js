@@ -17,5 +17,6 @@ hexo.extend.filter.register('before_post_render', function (data) {
         console.info("replace " + substring + " -> " + "<!-- toc -->");
         return "<!-- toc -->";
     });
+    console.info("\n");
     return data;
 }, 9);
