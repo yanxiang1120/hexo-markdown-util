@@ -1,6 +1,6 @@
 hexo.extend.filter.register('before_post_render', function (data) {
     var regExp = RegExp("!\\[(.*)\\]\\((.*)\\)", "g");
-    data.content = data.content.replace(regExp, function (substring, $1, $2, $3) {
+    data.content = data.content.replace(regExp, function (substring, name, url) {
         if (url.indexOf("://") === -1) {
             var index = url.indexOf("/");
             if (index !== -1) {
