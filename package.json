@@ -30,7 +30,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "hexo-toc": "^1.1.0",
-    "lodash": "^4.17.11"
+    "hexo-toc": "^1.1.0"
   }
 }
