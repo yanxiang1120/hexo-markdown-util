@@ -1,0 +1,35 @@
+{
+  "name": "hexo-markdown-util",
+  "version": "1.0.0",
+  "description": "hexo markdown 插件，兼容markdown图片和toc语法。",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanxiang1120/hexo-markdown-util.git"
+  },
+  "homepage": "https://github.com/yanxiang1120/hexo-markdown-util",
+  "bugs": {
+    "url": "https://github.com/yanxiang1120/hexo-markdown-util/issues"
+  },
+  "scripts": {
+  },
+  "keywords": [
+    "hexo",
+    "plugin",
+    "image",
+    "asset",
+    "path",
+    "filter",
+    "markdown",
+    "toc"
+  ],
+  "author": {
+    "name": "yeyanxiang",
+    "email": "yanxiang1120@126.com",
+    "url": "http://blog.yeyanxiang.cn"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hexo-toc": "^1.1.0",
+  }
+}
