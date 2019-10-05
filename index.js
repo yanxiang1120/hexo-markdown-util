@@ -19,14 +19,12 @@ hexo.extend.filter.register('before_post_render', function (data) {
         return result;
     });
 
-    data.content = data.content.replace(RegExp("\\[(.*)\\]\\((.*)\\)", "g"), function (substring, name, url) {
-        if (url.indexOf("://") === -1) {
-            var index = url.indexOf("/");
-            if (index !== -1) {
-                url = url.substr(index + 1);
-            }
+    data.content = data.content.replace(RegExp("\\[(.*)\\]\\((.*).md\\)", "g"), function (substring, name, url) {
+        if (url.indexOf("://") !== -1) {
+            return substring;
         }
-        var result = "{% asset_img " + url + " " + name + " %}";
+
+        var result = "["+name+"](../" + url + "/)";
         console.info("replace " + substring + " -> " + result);
         return result;
     });
