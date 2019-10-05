@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yanxiang1120/hexo-markdown-util.git"
+    "url": "git+https://github.com/yanxiang1120/hexo-markdown-util.git"
   },
   "homepage": "https://github.com/yanxiang1120/hexo-markdown-util",
   "bugs": {
