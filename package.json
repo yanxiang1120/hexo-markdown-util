@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanxiang1120/hexo-markdown-util.git"
+    "url": "https://github.com/yanxiang1120/hexo-markdown-util.git"
   },
   "homepage": "https://github.com/yanxiang1120/hexo-markdown-util",
   "bugs": {
@@ -31,7 +31,6 @@
   "license": "MIT",
   "dependencies": {
     "hexo-toc": "^1.1.0",
-    "lodash": "^4.17.11",
-    "cheerio": "^0.19.0"
+    "lodash": "^4.17.11"
   }
 }
